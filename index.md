@@ -28,7 +28,12 @@ These functions will induce some random jittering and help to load images. The n
 Model will be saved whenever an improvement in the training is observed at a checkpoint.
 
 The model will then be trained using the data. The length of all the folders are obtained previously.
-    history = model.fit(train_ds, 
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+  ``` history = model.fit(train_ds, 
           steps_per_epoch=train_len/20,
           validation_data=val_ds,
           validation_steps=val_len/20,
@@ -36,7 +41,7 @@ The model will then be trained using the data. The length of all the folders are
           verbose=1,
           callbacks=[cp_callback]
           )
-
+```
 After it is done, we can obtain the training and validation loss and accuracy.
 
 Clearly the training is excellent on the datasets after 50 epochs since the accuracy has reached almost 98% but the validation has not improved much. The accuracy is ~75% for validation data. This kind of overfitting can be avoided using dropping the data points in the model. Here I will proceed with the model evaluation which shows about 90% accuracy on the test dataset. Of course all these numbers depend on the images and can vary depending on the validation and test datasets.
