@@ -1,5 +1,7 @@
 # X-ray Image Classification and Model Evaluation
 ## Pneumonia detection from chest X-ray images using Tensorflow
+## Author: Md Sohel Mahmood
+## 06/20/2021
 
 ![GitHub Logo](/images/owen-beard-DK8jXx1B-1c-unsplash.jpg)
 
