@@ -29,11 +29,7 @@ Model will be saved whenever an improvement in the training is observed at a che
 
 The model will then be trained using the data. The length of all the folders are obtained previously.
 
-```python
-s = "Python syntax highlighting"
-print s
-```
-  ``` history = model.fit(train_ds, 
+ ``` history = model.fit(train_ds, 
           steps_per_epoch=train_len/20,
           validation_data=val_ds,
           validation_steps=val_len/20,
