@@ -28,7 +28,14 @@ These functions will induce some random jittering and help to load images. The n
 Model will be saved whenever an improvement in the training is observed at a checkpoint.
 
 The model will then be trained using the data. The length of all the folders are obtained previously.
-https://gist.github.com/mdsohelmahmood/903be065836243b54a896067f5fc627c
+    history = model.fit(train_ds, 
+          steps_per_epoch=train_len/20,
+          validation_data=val_ds,
+          validation_steps=val_len/20,
+          epochs=50,
+          verbose=1,
+          callbacks=[cp_callback]
+          )
 
 After it is done, we can obtain the training and validation loss and accuracy.
 
