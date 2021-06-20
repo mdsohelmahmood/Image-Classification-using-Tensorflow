@@ -2,12 +2,12 @@
 ## Pneumonia detection from chest X-ray images using Tensorflow
 
 ![GitHub Logo](/images/owen-beard-DK8jXx1B-1c-unsplash.jpg)
-Format: ![Alt Text](url)
+
 
 Kaggle has a wonderful source of chest X-ray image datasets for pneumonia and normal cases. There are significant differences between the image of a normal X-ray and an affected X-ray. Machine learning can play a pivotal role in determining the disease and significantly boost the diagnosis time as well as reduce human effort. In this article, I will walk through this dataset and classify the images with an evaluation accuracy of 90%.
 
 ![GitHub Logo](/images/im1.png)
-Format: ![Alt Text](url)
+
 
 I have been motivated by the work done here (https://goodboychan.github.io/python/deep_learning/tensorflow-keras/vision/2020/10/16/01-Image-Classification-with-Cat-and-Dog.html) on the datasets between cats and dogs and reused the code block for dataset pipeline. First we need to import the necessary packages.
 ```
@@ -296,9 +296,7 @@ The model will then be trained using the data. The length of all the folders are
 ```
 After it is done, we can obtain the training and validation loss and accuracy.
 ![GitHub Logo](/images/im2.png)
-Format: ![Alt Text](url)
 ![GitHub Logo](/images/im3.png)
-Format: ![Alt Text](url)
 
 Clearly the training is excellent on the datasets after 50 epochs since the accuracy has reached almost 98% but the validation has not improved much. The accuracy is ~75% for validation data. This kind of overfitting can be avoided using dropping the data points in the model. Here I will proceed with the model evaluation which shows about 90% accuracy on the test dataset. Of course all these numbers depend on the images and can vary depending on the validation and test datasets.
 ```
